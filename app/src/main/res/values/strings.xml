@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UI_Sample</string>
+    <string name="nav_home">HOME</string>
+    <string name="nav_about">ABOUT</string>
+    <string name="nav_settings">SETTINGS</string>
+    <string name="nav_sub_header">SUB_HEADER</string>
+    <string name="nav_sub_item_1">SUB_ITEMS1</string>
+    <string name="nav_sub_item_2">SUB_ITEMS2</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+</resources>
