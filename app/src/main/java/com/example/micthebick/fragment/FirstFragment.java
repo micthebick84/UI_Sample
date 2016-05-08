@@ -1,9 +1,9 @@
 package com.example.micthebick.fragment;
 
-import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * Created by micth on 2016-05-01.
  */
-public class FirstFragment extends Fragment{
+public class FirstFragment extends Fragment {
 
     private Spinner TopBuildingList, TopCommList;
     private Spinner BottomBuildingList, BottomCommList;
@@ -35,10 +35,10 @@ public class FirstFragment extends Fragment{
 
         FirstFragment fragment  =   new FirstFragment();
         return fragment;
+
     }
 
     public FirstFragment(){
-
 
     }
 
@@ -57,7 +57,6 @@ public class FirstFragment extends Fragment{
         Lookup  =   (Button)rootView.findViewById(R.id.btn_lookup);
         selectField =   (Button)rootView.findViewById(R.id.btn_field);
 
-
         TopBuildingList.setAdapter(dataAdapter);
         TopCommList.setAdapter(dataAdapter);
 
@@ -70,6 +69,9 @@ public class FirstFragment extends Fragment{
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+
+        ((MainActivity)getActivity()).onSectionAttached(1);
+
     }
 
     @Override

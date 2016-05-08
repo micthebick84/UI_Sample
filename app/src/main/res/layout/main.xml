@@ -21,21 +21,20 @@
                 android:layout_height="wrap_content">
 
                 <include
+                    android:id="@+id/toolbar"
                     layout="@layout/app_bar"
                     />
 
             </FrameLayout>
 
-            <fragment
-                android:id="@+id/inside_lookup"
-                android:name="com.example.micthebick.fragment.FirstFragment"
+
+            <FrameLayout
+                android:id="@+id/lookup_contents"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@id/main_content"
-                tools:layout="@layout/fragment_one"/>
-
-
-
+                >
+            </FrameLayout>
         </RelativeLayout>
 
 
